@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100vh;
+    background-image: url('./BG-NIGHT/clear.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app-main{
+    width: 60vh;
+    margin: 100px auto;
+    background-color: rgba(240,243,255,0.3);
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+.app-main > * {
+    margin-bottom: 20px;
+}
+
+.input-box{
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    outline: none;
+    color: #582233;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.weather-body{
+    display: none;
+    color: #582233;
+    padding: 40px;
+    line-height: 2.2rem;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.6);
+    height: 60vh;
+}
+
+.location-details{
+    font-weight: bold;
+}
+.weather-status{
+    padding: 20px;
+}
+.temp{
+    font-size: 55pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0,0,0,0.3);
+}
+.min-max,.weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:600px){
+
+    .input-box{
+        padding: 0 8px;
+    }
+    .app-main{
+        padding: 14px;
+        width: 52vh;
+    }
+    .app-main > * {
+        margin-bottom: 18px;
+    }
+    .weather-body{
+        height: 65vh;
+    }
+    .temp{
+        font-size: 50pt;
+        font-weight: 700;
+    }
+}
